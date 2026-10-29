@@ -1,0 +1,86 @@
+==================================================
+ System report
+==================================================
+Student full name : Saparbek Seidulla
+Date and time     : 2026-10-30 01:25:38 +05
+Current username  : saparbek
+Hostname          : MacBook-Neo-Kazbek
+
+--- Operating system and kernel ---
+ProductName:		macOS
+ProductVersion:		27.2
+BuildVersion:		26B123
+Kernel            : Darwin 27.2.0 (arm64)
+
+--- CPU ---
+Model             : Apple A18 Pro
+Cores             : 6
+Load average      : 4,51 52,29 77,55
+
+--- Memory ---
+Total RAM         : 8192 MB
+System-wide memory free percentage: 33%
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                                     4868.
+Pages active:                                  80807.
+Pages inactive:                                76651.
+Pages speculative:                              3591.
+
+--- Disk usage ---
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   228Gi    13Gi    91Gi    13%    487k  957M    0%   /
+/dev/disk3s6     228Gi   3,0Gi    91Gi     4%       3  957M    0%   /System/Volumes/VM
+/dev/disk3s2     228Gi   9,5Gi    91Gi    10%    1,4k  957M    0%   /System/Volumes/Preboot
+/dev/disk3s4     228Gi    80Mi    91Gi     1%     109  957M    0%   /System/Volumes/Update
+/dev/disk1s2     550Mi   6,0Mi   527Mi     2%       1  5,4M    0%   /System/Volumes/xarts
+/dev/disk1s1     550Mi   6,2Mi   527Mi     2%      53  5,4M    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3     550Mi   6,2Mi   527Mi     2%     884  5,4M    0%   /System/Volumes/Hardware
+/dev/disk3s5     228Gi   110Gi    91Gi    55%    1,6M  957M    0%   /System/Volumes/Data
+/dev/disk3s3     228Gi   1,8Gi    91Gi     2%      73  957M    0%   /Volumes/Recovery
+
+--- Available disk space (home directory) ---
+Available: 91Gi of 228Gi (55% used) on /System/Volumes/Data
+
+==================================================
+ System report
+==================================================
+Student full name : Saparbek Seidulla
+Date and time     : 2026-10-30 01:25:39 +05
+Current username  : saparbek
+Hostname          : MacBook-Neo-Kazbek
+
+--- Operating system and kernel ---
+ProductName:		macOS
+ProductVersion:		27.2
+BuildVersion:		26B123
+Kernel            : Darwin 27.2.0 (arm64)
+
+--- CPU ---
+Model             : Apple A18 Pro
+Cores             : 6
+Load average      : 4,51 52,29 77,55
+
+--- Memory ---
+Total RAM         : 8192 MB
+System-wide memory free percentage: 33%
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                                     5042.
+Pages active:                                  82057.
+Pages inactive:                                77302.
+Pages speculative:                              4146.
+
+--- Disk usage ---
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   228Gi    13Gi    91Gi    13%    487k  957M    0%   /
+/dev/disk3s6     228Gi   3,0Gi    91Gi     4%       3  957M    0%   /System/Volumes/VM
+/dev/disk3s2     228Gi   9,5Gi    91Gi    10%    1,4k  957M    0%   /System/Volumes/Preboot
+/dev/disk3s4     228Gi    80Mi    91Gi     1%     109  957M    0%   /System/Volumes/Update
+/dev/disk1s2     550Mi   6,0Mi   527Mi     2%       1  5,4M    0%   /System/Volumes/xarts
+/dev/disk1s1     550Mi   6,2Mi   527Mi     2%      53  5,4M    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3     550Mi   6,2Mi   527Mi     2%     884  5,4M    0%   /System/Volumes/Hardware
+/dev/disk3s5     228Gi   110Gi    91Gi    55%    1,6M  957M    0%   /System/Volumes/Data
+/dev/disk3s3     228Gi   1,8Gi    91Gi     2%      73  957M    0%   /Volumes/Recovery
+
+--- Available disk space (home directory) ---
+Available: 91Gi of 228Gi (55% used) on /System/Volumes/Data
+

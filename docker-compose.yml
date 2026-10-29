@@ -1,0 +1,48 @@
+name: saparbek-seidulla-student-api
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: saparbek-seidulla-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-studentdb}
+      POSTGRES_USER: ${POSTGRES_USER:-student}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  app:
+    build: .
+    image: saparbek-seidulla-student-api:${IMAGE_TAG:-v1.0-saparbek-seidulla}
+    container_name: saparbek-seidulla-app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      # "db" is the Compose service name, resolved by Docker DNS (not localhost)
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB:-studentdb}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-student}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      APP_CONTEXT_PATH: /saparbek-seidulla
+      STUDENT_NAME: "Saparbek Seidulla"
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    networks:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+    name: saparbek-seidulla-pgdata
+
+networks:
+  backend:
+    name: saparbek-seidulla-network
