@@ -72,6 +72,19 @@ class StudentControllerTest {
     }
 
     @Test
+    void updatesStudent() throws Exception {
+        long id = createStudent();
+        String updated = """
+                {"fullName":"Saparbek Seidulla","email":"updated@iitu.edu.kz","groupName":"IT2-2302","course":4}
+                """;
+        mvc.perform(put("/api/students/" + id)
+                        .contentType(MediaType.APPLICATION_JSON).content(updated))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.email").value("updated@iitu.edu.kz"))
+                .andExpect(jsonPath("$.course").value(4));
+    }
+
+    @Test
     void showsStudentInInfo() throws Exception {
         mvc.perform(get("/api/info"))
                 .andExpect(status().isOk())
