@@ -28,6 +28,16 @@ public class StudentService {
     }
 
     @Transactional
+    public Student update(Long id, Student changes) {
+        Student existing = findById(id);
+        existing.setFullName(changes.getFullName());
+        existing.setEmail(changes.getEmail());
+        existing.setGroupName(changes.getGroupName());
+        existing.setCourse(changes.getCourse());
+        return repository.save(existing);
+    }
+
+    @Transactional
     public void delete(Long id) {
         Student existing = findById(id);
         repository.delete(existing);
