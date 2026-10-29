@@ -54,7 +54,7 @@ class StudentControllerTest {
     void returnsNotFoundForMissingStudent() throws Exception {
         mvc.perform(get("/api/students/999999"))
                 .andExpect(status().isNotFound())
-                .andExpect(jsonPath("$.status").value(404));
+                .andExpect(jsonPath("$.status").value(200)); // CONTROLLED ERROR: the API returns 404 here
     }
 
     @Test
