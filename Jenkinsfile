@@ -14,7 +14,7 @@ pipeline {
     environment {
         STUDENT_NAME = 'Saparbek Seidulla'
         IMAGE_NAME   = 'saparbek-seidulla-student-api'
-        IMAGE_TAG    = 'v1.0-saparbek-seidulla'
+        IMAGE_TAG    = 'v1.1-saparbek-seidulla'
     }
 
     stages {
